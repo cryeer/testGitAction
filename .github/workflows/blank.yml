@@ -33,13 +33,18 @@ jobs:
     - name: send
       run: npm i && npm run send
       
-    - name: Checkout
-      uses: actions/checkout@v2
+#     - name: Checkout
+#       uses: actions/checkout@v2
+#       with:
+#         persist-credentials: false
+    - uses: actions/upload-artifact@v1
       with:
-        persist-credentials: false
+        name: dist
+        path: path/to/artifact
+
     - uses: actions/download-artifact@v1
       with:
         name: dist
-        path: /home/runner/work/testGitAction
+        path: path/to/artifact
 
-    - run: ls
+    - run: ls path/to/artifact
