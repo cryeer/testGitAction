@@ -4,6 +4,4 @@ description: 'Provide a description here'
 author: 'Your name or organization here'
 runs:
   using: 'node12'
-  main: 'main.js'
-  env:
-    name: 'octocat'
+  main: 'index.js'
