@@ -33,9 +33,9 @@ jobs:
     - name: send
       run: npm i && npm run send
       
-    - name: publish:starters
-      uses: johno/actions-push-subdirectories@master
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+    - uses: actions/download-artifact@v1
       with:
-        args: dist cryeer actions
+        name: my-artifact
+        path: path/to/artifact
+
+    - run: ls path/to/artifact
