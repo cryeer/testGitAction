@@ -5,7 +5,7 @@ const url = 'https://oapi.dingtalk.com/robot/send?access_token=e1218776ef269757b
 const data = {
     "msgtype": "text", 
     "text": {
-        "content": "我就是git, 是不一样的G~"
+        "content": "我就是git, 是不一样的G~GG"
     }
 }
 
