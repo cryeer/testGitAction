@@ -40,6 +40,6 @@ jobs:
     - uses: actions/download-artifact@v1
       with:
         name: dist
-        path: .
+        path: /home/runner/work/testGitAction
 
     - run: ls
