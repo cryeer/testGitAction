@@ -31,7 +31,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-    - name: build
-      run: npm run build
+    - name: send
+      run: npm run send
       with:
         node-version: '12.x'
