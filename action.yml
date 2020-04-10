@@ -4,4 +4,3 @@ description: 'Provide a description here'
 author: 'Your name or organization here'
 runs:
   using: 'node12'
-  main: 'index.js'
