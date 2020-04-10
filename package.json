@@ -1,0 +1,19 @@
+{
+  "name": "testgitaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryeer/testGitAction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryeer/testGitAction/issues"
+  },
+  "homepage": "https://github.com/cryeer/testGitAction#readme"
+}
