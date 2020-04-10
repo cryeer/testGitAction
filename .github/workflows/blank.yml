@@ -33,9 +33,13 @@ jobs:
     - name: send
       run: npm i && npm run send
       
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - uses: actions/download-artifact@v1
       with:
         name: my-artifact
-        path: path/to/artifact
+        path: dist
 
-    - run: ls path/to/artifact
+    - run: ls dist
