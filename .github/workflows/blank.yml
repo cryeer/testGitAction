@@ -30,8 +30,13 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    # - name: get source code
-    #  uses: cryeer/testGitAction@master
-
+#     - uses: cryeer/testGitAction@master
+#     - uses: actions/checkout@v1
+#     - name: Use Node.js ${{ matrix.node_version }}
+#       uses: actions/setup-node@v1
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
     - name: send
       run: npm i && npm run send
