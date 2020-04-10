@@ -30,8 +30,8 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - name: get source code
-      uses: cryeer/testGitAction@master
+    # - name: get source code
+    #  uses: cryeer/testGitAction@master
 
     - name: send
       run: npm i && npm run send
