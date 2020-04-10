@@ -32,3 +32,11 @@ jobs:
         node-version: '10.x'
     - name: send
       run: npm i && npm run send
+      
+    - name: publish:starters
+      uses: johno/actions-push-subdirectories@master
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: dist cryeer actions
